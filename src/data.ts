@@ -31,6 +31,7 @@ export const ACADEMIC_PROFILE = {
   title: "Visual Storyteller & Photographer",
   candidacy: "M.Des Aspirant | IIT Guwahati Presentation",
   location: "पटना, बिहार, भारत (Patna, Bihar, India)",
+  philosophyQuote: "Design is not just decoration. It is emotion, memory, and perspective.",
   academicBio: "A visual designer deeply rooted in the culture of Bihar. Guided by traditional craftsmanship and modern storytelling, my work bridges user research, documentary photography, and narrative building.",
   email: "payalpriyadarshini1403@gmail.com"
 };
