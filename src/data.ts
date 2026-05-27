@@ -31,8 +31,7 @@ export const ACADEMIC_PROFILE = {
   title: "Visual Storyteller & Photographer",
   candidacy: "M.Des Aspirant | IIT Guwahati Presentation",
   location: "पटना, बिहार, भारत (Patna, Bihar, India)",
-  philosophyQuote: "Design is not just decoration. It is emotion, memory, and perspective.",
-  academicBio: "A visual communicator deeply rooted in the culture of बिहार (Bihar). Guided by the blend of ancestral craftsmanship and modern storytelling, my work bridges human-centered research, documentary photography, and narrative building.",
+  academicBio: "A visual designer deeply rooted in the culture of Bihar. Guided by traditional craftsmanship and modern storytelling, my work bridges user research, documentary photography, and narrative building.",
   email: "payalpriyadarshini1403@gmail.com"
 };
 
@@ -60,15 +59,15 @@ export const CORE_PHILOSOPHY: PhilosophyPillar[] = [
 export const MAIN_PORTFOLIO: ProjectInfo = {
   id: "main-portfolio",
   title: "PAYAL PRIYADARSHINI",
-  subtitle: "Core Academic Visual Portfolio (A3)",
+  subtitle: "Academic Visual Portfolio",
   canvaUrl: "https://www.canva.com/design/DAHKCwPJ1R8/XGrS1Xw6_6tZjqCPQ1sqtw/view",
   embedUrl: "https://www.canva.com/design/DAHKCwPJ1R8/XGrS1Xw6_6tZjqCPQ1sqtw/view?embed",
   aspectRatio: "pb-[70.71%]",
-  medium: "Interdisciplinary Design & Layout Research (A3 Format)",
+  medium: "Interdisciplinary Design & Layout",
   year: "2026",
   tags: ["Visual Identity", "Layout Architecture", "Contemporary Portfolio", "Typography Systems"],
-  description: "A comprehensive investigation of unified layouts, type hierarches, and aesthetic curation designed for high-end professional and academic presentations.",
-  curatorialNote: "Arranged with absolute respect for breathing margin lines, structured grid rules, and elegant negative space, this design dossier contains selected projects illustrating active problem statements and artistic responses."
+  description: "A comprehensive portfolio of my layouts, typography, and design projects for academic presentation.",
+  curatorialNote: "Arranged with clean grids and elegant negative space, this portfolio contains selected projects illustrating my design process and solutions."
 };
 
 export const STORY_ILLUSTRATION: ProjectInfo = {
@@ -81,8 +80,8 @@ export const STORY_ILLUSTRATION: ProjectInfo = {
   medium: "Mixed-Media Digital Ink & Graphic Curation",
   year: "2025",
   tags: ["Folk Literature", "Character Exploration", "Storyboarding", "Emotional Synthesis"],
-  description: "A highly cinematic visual narrative exploring characters and scenarios using emotional lighting, sketch-like textures, and deep dreamlike structures.",
-  curatorialNote: "This project operates as an immersive narrative piece, combining the raw textures of physical paper drawing with subtle digital depth layers to achieve highly descriptive emotional states."
+  description: "A visual narrative exploring characters and scenarios using emotive lighting and sketch-like textures.",
+  curatorialNote: "This project combines the raw textures of physical drawing with subtle digital layers to convey emotion."
 };
 
 export const PHOTOGRAPHY_PROJECTS: ProjectInfo[] = [

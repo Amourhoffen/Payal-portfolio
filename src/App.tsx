@@ -33,7 +33,6 @@ import {
 } from "./data";
 
 import ExhibitionLoader from "./components/ExhibitionLoader";
-import AmbientSound from "./components/AmbientSound";
 import MadhubaniBorder from "./components/MadhubaniBorder";
 import ExhibitFrame from "./components/ExhibitFrame";
 import PhilosophyStudio from "./components/PhilosophyStudio";
@@ -221,17 +220,14 @@ export default function App() {
               <span className="font-mono text-[9px] text-clay/40 hidden sm:inline tracking-wider">M.Des Admission & Portfolio Review</span>
             </div>
 
-            {/* Scientific Navigation Metrics and Audio Toggle */}
             <div className="flex items-center gap-6">
               
               {/* Patna Ticking local time clock */}
-              <div className="hidden lg:flex items-center gap-2 font-mono text-[10px] text-clay/50 border-r border-zinc-900 pr-6">
+              <div className="hidden lg:flex items-center gap-2 font-mono text-[10px] text-clay/50 pr-2">
                 <Clock className="w-3.5 h-3.5 text-terracotta" />
                 <span>पटना, बिहार (Patna, Bihar) — IST {patnaTime || "17:48:43"}</span>
               </div>
 
-              {/* Ambient sound trigger for interview impact */}
-              <AmbientSound />
             </div>
           </div>
         </header>
@@ -333,7 +329,7 @@ export default function App() {
                 </h1>
                 
                 <h2 className="font-mono text-xs md:text-sm tracking-widest text-clay/50 uppercase pt-2">
-                  M.Des Aspirant • Visual Storyteller • Observer Photographer
+                  M.Des Aspirant • Visual Storyteller • Photographer
                 </h2>
               </div>
 
@@ -343,7 +339,7 @@ export default function App() {
                   “{ACADEMIC_PROFILE.philosophyQuote}”
                 </p>
                 <cite className="block font-mono text-[10px] text-clay/35 tracking-wider uppercase">
-                  — The Aesthetic Manifesto
+                  — Design Philosophy
                 </cite>
               </blockquote>
 
@@ -353,7 +349,7 @@ export default function App() {
                   onClick={() => scrollToRef(portfolioRef)}
                   className="px-6 py-3 rounded-full bg-terracotta/90 hover:bg-terracotta text-warm-beige font-mono text-xs tracking-widest uppercase transition-all duration-500 hover:shadow-[0_4px_20px_rgba(200,92,66,0.3)] cursor-pointer text-center"
                 >
-                  View Digital Archive
+                  View Portfolio
                 </button>
                 
                 <button
@@ -361,7 +357,7 @@ export default function App() {
                   onClick={() => scrollToRef(aboutRef)}
                   className="px-6 py-3 rounded-full border border-zinc-800 text-clay/80 hover:text-warm-beige hover:border-clay/40 transition-all duration-500 font-mono text-xs tracking-widest uppercase cursor-pointer text-center"
                 >
-                  Read Curator Statement
+                  Read My Story
                 </button>
               </div>
             </div>
@@ -445,7 +441,7 @@ export default function App() {
               {/* Left Column: Side headers typical of Japanese edit layouts */}
               <div className="lg:col-span-4 text-left space-y-4 lg:sticky lg:top-28">
                 <span className="text-[10px] font-mono tracking-widest text-clay/50 uppercase block">
-                  कलाकार परिचय • ARTIST BIOGRAPHY
+                  कलाकार परिचय • ABOUT ME
                 </span>
                 <h3 className="font-serif text-3xl md:text-4xl text-warm-beige tracking-wide font-light">
                   About Me
@@ -479,20 +475,20 @@ export default function App() {
                   <div className="space-y-3">
                     <h4 className="font-serif text-xl text-warm-beige border-b border-zinc-900 pb-2 flex items-center gap-2">
                       <Layers className="w-4 h-4 text-terracotta" />
-                      Visual Ethnographer
+                      Visual Researcher
                     </h4>
                     <p className="text-sm text-clay/70 leading-relaxed font-light">
-                      Her lens studies the structural geometry of everyday Indian transit spaces. Rather than snapshotting scenes, Payal maps the invisible dialogue between local architecture and biological human forms.
+                      My lens studies the structural geometry of everyday Indian spaces. Rather than just snapshotting scenes, I document the invisible dialogue between local architecture and human forms.
                     </p>
                   </div>
 
                   <div className="space-y-3">
                     <h4 className="font-serif text-xl text-warm-beige border-b border-zinc-900 pb-2 flex items-center gap-2">
                       <Camera className="w-4 h-4 text-terracotta" />
-                      Cultural Semanticist
+                      Cultural Storyteller
                     </h4>
                     <p className="text-sm text-clay/70 leading-relaxed font-light">
-                      Born and working from Patna, she views traditional Mithila rules not as archaic ornament, but as a robust digital layouts framework. Her work extracts these principles to construct clean, minimal modern displays.
+                      Born and working from Patna, I view traditional Mithila art not just as an ornament, but as a robust digital layout framework. My work extracts these principles to construct clean, minimal modern displays.
                     </p>
                   </div>
                 </div>
@@ -503,7 +499,7 @@ export default function App() {
                 {/* Personal Philosophy Quote with subtle hover reveal animation */}
                 <div className="pt-6">
                   <span className="font-mono text-[9px] text-[#555] tracking-widest uppercase block mb-3">
-                    Core Philosophy & manifesto
+                    Design Philosophy
                   </span>
                   <PhilosophyQuoteRevealer quote={ACADEMIC_PROFILE.philosophyQuote} />
                 </div>
@@ -539,13 +535,13 @@ export default function App() {
             {/* Header Block */}
             <div className="text-center max-w-2xl mx-auto space-y-2 relative z-10">
               <span className="text-[10px] font-mono tracking-widest text-terracotta uppercase">
-                प्रदर्शन दीर्घा • THE EXHIBITION CHAMBERS
+                प्रदर्शन दीर्घा • PORTFOLIO PROJECTS
               </span>
               <h2 className="font-serif text-3xl md:text-5xl text-warm-beige tracking-wide font-light">
-                Digital Curation & Dossiers
+                My Projects
               </h2>
               <p className="text-xs text-clay/50 font-mono">
-                Click across the three gallery chambers to trigger custom animated transitions, mask reveals, and detail pans.
+                Click across the three gallery chambers to explore my work.
               </p>
               
               <div className="flex justify-center pt-2">
@@ -572,12 +568,12 @@ export default function App() {
 
           <div className="max-w-6xl mx-auto">
             <div className="space-y-1 mb-12 text-left">
-              <span className="text-[10px] font-mono tracking-widest text-terracotta uppercase block">
-                शोध प्रक्रिया एवं विकास • RESEARCH & JOURNEY
-              </span>
-              <h3 className="font-serif text-3xl md:text-4xl text-warm-beige tracking-wide font-light">
-                My Creative Timeline
-              </h3>
+                <span className="text-[10px] font-mono tracking-widest text-terracotta uppercase block">
+                  शोध प्रक्रिया एवं विकास • RESEARCH & JOURNEY
+                </span>
+                <h3 className="font-serif text-3xl md:text-4xl text-warm-beige tracking-wide font-light">
+                  My Journey
+                </h3>
               <p className="text-xs text-clay/50 font-mono">
                 Click through the milestones to explore my experiences, research, and design progression.
               </p>
@@ -730,7 +726,7 @@ export default function App() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center md:text-left space-y-2 mb-12">
               <span className="text-[10px] font-mono tracking-widest text-clay/50 uppercase block">
-                देशज विन्यास अध्ययन • VERNACULAR GEOMETRY STUDY
+                देशज विन्यास अध्ययन • TRADITIONAL ART STUDY
               </span>
               <h3 className="font-serif text-3xl md:text-4xl text-warm-beige tracking-wide font-light flex flex-wrap items-center gap-x-2 gap-y-1">
                 <span>The</span>
@@ -738,7 +734,7 @@ export default function App() {
                 <span>Vernacular Synthesis</span>
               </h3>
               <p className="text-xs text-clay/50 font-mono mt-0.5">
-                How Payal Priyadarshini translates historic बिहार (Bihar) identity into clean contemporary art.
+                How I translate historic Bihar identity into clean contemporary art.
               </p>
             </div>
 
@@ -886,18 +882,18 @@ export default function App() {
             {/* Left Column Text details */}
             <div className="lg:col-span-5 space-y-6">
               <span className="text-[10px] font-mono tracking-widest text-terracotta uppercase block">
-                सम्पर्क सूत्र • INITIATE CONTACT
+                सम्पर्क सूत्र • GET IN TOUCH
               </span>
               <h3 className="font-serif text-3xl md:text-4xl text-warm-beige tracking-wide font-light">
-                Initiate Dialogue
+                Let's Connect
               </h3>
               
               <p className="text-sm text-clay/70 leading-relaxed font-light font-sans">
-                Professors, evaluation team, or collaborators looking to discuss design research, visual essays, or academic alignment in M.Des at IIT Guwahati can send a direct transmission.
+                I am eager to discuss my design research and portfolio with the evaluation panel at IIT Guwahati. Please feel free to reach out.
               </p>
               
               <div className="space-y-4 pt-4 border-t border-zinc-900">
-                <span className="font-mono text-[9px] text-zinc-500 uppercase block">DIRECT EMAIL</span>
+                <span className="font-mono text-[9px] text-zinc-500 uppercase block">EMAIL</span>
                 <a
                   id="direct-email-link"
                   href={`mailto:${ACADEMIC_PROFILE.email}`}
@@ -909,7 +905,7 @@ export default function App() {
               </div>
 
               <div className="space-y-4 pt-1">
-                <span className="font-mono text-[9px] text-zinc-500 uppercase block">GEOGRAPHICAL HQ</span>
+                <span className="font-mono text-[9px] text-zinc-500 uppercase block">LOCATION</span>
                 <p className="text-xs font-mono text-clay/60 flex items-center gap-2">
                   <MapPin className="w-3.5 h-3.5 text-terracotta" />
                   <span>पटना, बिहार (Patna, Bihar, India)</span>
@@ -930,9 +926,9 @@ export default function App() {
                   >
                     <CheckCircle className="w-12 h-12 text-terracotta animate-pulse" />
                     <div>
-                      <h4 className="font-serif text-xl text-warm-beige font-light">Message Transmitted</h4>
+                      <h4 className="font-serif text-xl text-warm-beige font-light">Message Sent</h4>
                       <p className="text-xs text-clay/50 font-mono mt-1">
-                        Your message has been received successfully. Thank you for your inquiry.
+                        Thank you for reaching out. I'll get back to you soon.
                       </p>
                     </div>
                   </motion.div>
