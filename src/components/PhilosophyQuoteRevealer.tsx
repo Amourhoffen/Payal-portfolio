@@ -9,7 +9,7 @@ interface PhilosophyQuoteRevealerProps {
 
 export default function PhilosophyQuoteRevealer({
   quote,
-  author = "The Aesthetic Manifesto",
+  author = "Design Philosophy",
 }: PhilosophyQuoteRevealerProps) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -107,18 +107,6 @@ export default function PhilosophyQuoteRevealer({
           <span className="font-mono text-[9px] tracking-widest text-zinc-500 uppercase block translate-y-1 group-hover:translate-y-0 transition-transform duration-500">
             {author}
           </span>
-          <AnimatePresence>
-            {isHovered && (
-              <motion.span
-                initial={{ opacity: 0, y: 3 }}
-                animate={{ opacity: 0.6, y: 0 }}
-                exit={{ opacity: 0, y: 3 }}
-                className="font-mono text-[8px] tracking-wider text-terracotta uppercase block mt-1"
-              >
-                ✦ Click quote block anywhere to activate curatorial soundscape
-              </motion.span>
-            )}
-          </AnimatePresence>
         </div>
       </div>
     </div>
