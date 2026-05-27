@@ -33,7 +33,7 @@ export const ACADEMIC_PROFILE = {
   location: "पटना, बिहार, भारत (Patna, Bihar, India)",
   philosophyQuote: "Design is not just decoration. It is emotion, memory, and perspective.",
   academicBio: "A visual communicator deeply rooted in the culture of बिहार (Bihar). Guided by the blend of ancestral craftsmanship and modern storytelling, my work bridges human-centered research, documentary photography, and narrative building.",
-  email: "payalpriyadarshi1403@gmail.com"
+  email: "payalpriyadarshini1403@gmail.com"
 };
 
 export const CORE_PHILOSOPHY: PhilosophyPillar[] = [

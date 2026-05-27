@@ -149,7 +149,7 @@ export default function App() {
     setIsSubmitting(true);
     
     try {
-      await fetch("https://formsubmit.co/ajax/payalpriyadarshi1403@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/payalpriyadarshini1403@gmail.com", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
