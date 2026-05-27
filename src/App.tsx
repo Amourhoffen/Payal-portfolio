@@ -313,14 +313,16 @@ export default function App() {
           <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-15">
             
             {/* Left Content Column */}
-            <div className="lg:col-span-7 space-y-8 text-left">
+            <div className="lg:col-span-7 space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="space-y-2">
                 <span className="text-xs uppercase tracking-widest font-mono text-terracotta font-medium block">
                   प्रवेशार्थ संचयन • M.DES PORTFOLIO
                 </span>
                 
                 {/* Micro Madhubani Line Separator */}
-                <MadhubaniBorder variant="horizontal" className="max-w-xs py-0.5" opacity={0.4} />
+                <div className="w-full flex justify-center lg:justify-start">
+                  <MadhubaniBorder variant="horizontal" className="max-w-xs py-0.5" opacity={0.4} />
+                </div>
 
                 <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight text-warm-beige leading-none font-light mt-4">
                   PAYAL
@@ -334,7 +336,7 @@ export default function App() {
               </div>
 
               {/* Central high-art design quote */}
-              <blockquote className="border-l border-terracotta/40 pl-6 space-y-2">
+              <blockquote className="border-l border-terracotta/40 pl-6 space-y-2 text-left max-w-xl">
                 <p className="font-serif text-lg md:text-2xl italic leading-relaxed text-clay/90 font-light">
                   “{ACADEMIC_PROFILE.philosophyQuote}”
                 </p>
@@ -343,7 +345,7 @@ export default function App() {
                 </cite>
               </blockquote>
 
-              <div className="pt-4 flex flex-col sm:flex-row gap-4">
+              <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full">
                 <button
                   id="view-curation-btn"
                   onClick={() => scrollToRef(portfolioRef)}
@@ -403,7 +405,7 @@ export default function App() {
                       Portrait of the artist (पटना, बिहार)
                     </p>
                     <p className="font-mono text-[7px] text-clay/45">
-                      Focal Length: 35mm Prime • Silver Halide Documentary Archive
+                      Personal Archive • 2026
                     </p>
                   </div>
                 </div>
