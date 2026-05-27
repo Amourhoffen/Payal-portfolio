@@ -55,6 +55,8 @@ export default function App() {
   const [activeTimelineIndex, setActiveTimelineIndex] = useState<number>(0);
   const [activeChamber, setActiveChamber] = useState<"dossier" | "narration" | "observation">("dossier");
   const [imageError, setImageError] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const heroRef = useRef<HTMLElement>(null);
   const aboutRef = useRef<HTMLElement>(null);
@@ -95,10 +97,20 @@ export default function App() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  // Scroll active section tracker
+  // Scroll active section tracker and Navbar hide/show
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPos = window.scrollY + window.innerHeight / 3;
+      const currentScrollY = window.scrollY;
+      
+      // Navbar visibility logic
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsNavVisible(false);
+      } else {
+        setIsNavVisible(true);
+      }
+      setLastScrollY(currentScrollY);
+
+      const scrollPos = currentScrollY + window.innerHeight / 3;
 
       if (heroRef.current && scrollPos >= heroRef.current.offsetTop && scrollPos < heroRef.current.offsetTop + heroRef.current.offsetHeight) {
         setActiveSection("hero");
@@ -125,9 +137,9 @@ export default function App() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY, activeChamber]);
 
   // Form Submission Logic
   const handleSubmitContact = (e: React.FormEvent) => {
@@ -184,7 +196,7 @@ export default function App() {
       <div className={`transition-all duration-1000 ${loaderComplete ? "opacity-100" : "opacity-0 scale-95 pointer-events-none"}`}>
         
         {/* Navigation & Exhibition rail */}
-        <header className="fixed top-0 inset-x-0 bg-charcoal-deep/80 backdrop-blur-md border-b border-zinc-900/60 z-30 px-6 py-4 transition-all duration-500">
+        <header className={`fixed top-0 inset-x-0 bg-charcoal-deep/85 backdrop-blur-md border-b border-zinc-900/60 z-50 px-6 py-4 transition-all duration-500 ease-in-out ${isNavVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}>
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Logo details with contemporary design-school identity */}
             <div className="flex items-center gap-2">
