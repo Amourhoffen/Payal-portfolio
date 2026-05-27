@@ -142,12 +142,25 @@ export default function App() {
   }, [lastScrollY, activeChamber]);
 
   // Form Submission Logic
-  const handleSubmitContact = (e: React.FormEvent) => {
+  const handleSubmitContact = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!contactName || !contactEmail || !contactMessage) return;
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    
+    try {
+      await fetch("https://formsubmit.co/ajax/payalpriyadarshi1403@gmail.com", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            name: contactName,
+            email: contactEmail,
+            message: contactMessage
+        })
+      });
       setIsSubmitting(false);
       setFormSubmitted(true);
       setContactName("");
@@ -155,7 +168,10 @@ export default function App() {
       setContactMessage("");
       // Reset after 5s
       setTimeout(() => setFormSubmitted(false), 5000);
-    }, 1500);
+    } catch (error) {
+      console.error(error);
+      setIsSubmitting(false);
+    }
   };
 
   const scrollToRef = (ref: React.RefObject<HTMLElement | null>) => {

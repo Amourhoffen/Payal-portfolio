@@ -27,7 +27,7 @@ export default function PhilosophyStudio() {
           The Vernacular Synthesis Studio
         </h3>
         <p className="text-sm text-clay/60 font-mono mt-1">
-          Tracing ancestral spatial patterns and transforming them into minimalist UI grammar.
+          Exploring traditional art forms and integrating them into modern design systems.
         </p>
         
         <div className="w-20 h-[1px] bg-terracotta/30 my-6" />
@@ -116,7 +116,7 @@ export default function PhilosophyStudio() {
                 {activeTab === 0 && (
                   <div className="space-y-4 py-2">
                     <span className="text-[10px] font-mono text-terracotta uppercase block">
-                      Specimen A: Spatial Line Partition Geometry
+                      Specimen A: Traditional Space Division
                     </span>
                     
                     {/* Animated Geometric Vector Canvas representing Mithila spacing syntax */}
@@ -154,7 +154,7 @@ export default function PhilosophyStudio() {
                       </svg>
                       
                       <div className="absolute bottom-1 right-2 font-mono text-[8px] text-zinc-600">
-                        VISUAL ANALYSIS: ROOT-2 SPACE PARTITION
+                        VISUAL ANALYSIS: GRID STRUCTURE
                       </div>
                     </div>
                     <p className="text-[11px] text-clay/50 font-mono text-center">
@@ -166,7 +166,7 @@ export default function PhilosophyStudio() {
                 {activeTab === 1 && (
                   <div className="space-y-4 py-2">
                     <span className="text-[10px] font-mono text-terracotta uppercase block">
-                      Specimen B: Chromatic Soil & Pigments Ratio
+                      Specimen B: Natural Color Palette
                     </span>
 
                     {/* Terracotta mix sandbox */}
@@ -197,7 +197,7 @@ export default function PhilosophyStudio() {
                 {activeTab === 2 && (
                   <div className="space-y-4 py-2">
                     <span className="text-[10px] font-mono text-terracotta uppercase block">
-                      Specimen C: Silt Cotton Paper Fibers
+                      Specimen C: Tactile Digital Textures
                     </span>
 
                     {/* Interactive Fiber visualizer */}
