@@ -81,7 +81,8 @@ export default function ExhibitFrame({
           <iframe
             id={`iframe-${id}`}
             loading="lazy"
-            className="absolute top-0 left-0 w-full h-full border-none p-0 m-0 z-10 rounded-lg filter brightness-[0.85] hover:brightness-100 transition-all duration-700 shadow-2xl"
+            className="absolute left-0 w-full h-[calc(100%+110px)] border-none p-0 m-0 z-10 rounded-lg filter brightness-[0.85] hover:brightness-100 transition-all duration-700 shadow-2xl"
+            style={{ top: "-55px" }}
             src={embedUrl}
             allowFullScreen
             allow="fullscreen"
